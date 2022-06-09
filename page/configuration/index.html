@@ -520,6 +520,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#go-vs-code-debug-adapter" class="md-nav__link">
+    Go (VS Code debug adapter)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#javascript" class="md-nav__link">
     Javascript
   </a>
@@ -606,6 +613,20 @@
     <li class="md-nav__item">
       <a href="../clojure/" class="md-nav__link">
         Clojure
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python-poetry-pyenv/" class="md-nav__link">
+        Python, debbuging with poetry + pyenv
       </a>
     </li>
   
@@ -903,6 +924,13 @@
         <li class="md-nav__item">
   <a href="#go" class="md-nav__link">
     Go
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#go-vs-code-debug-adapter" class="md-nav__link">
+    Go (VS Code debug adapter)
   </a>
   
 </li>
@@ -1230,6 +1258,81 @@ LLDB configuration.</p>
 <p>Installation</p>
 <ul>
 <li>
+<p>install gopls</p>
+</li>
+<li>
+<p>Install the delve command by following instructions on <a href="https://github.com/go-delve/delve/tree/master/Documentation/installation">delve -
+    installation</a>.</p>
+</li>
+<li>
+<p>install lsp-mode</p>
+</li>
+<li>
+<p>Put in your emacs configuration.</p>
+<p><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nb">require</span> <span class="ss">&#39;dap-dlv-go</span><span class="p">)</span>
+</code></pre></div>
+    <!-- end list --></p>
+</li>
+<li>
+<p>Usage</p>
+<p>assume you have your code at \~/src/cool/cmd/app/app.go</p>
+<ul>
+<li>open your main package file e.g \~/src/cool/cmd/app/app.go</li>
+<li>or open a test file e.g app<sub>test</sub>.go</li>
+<li>add folder to lsp session where your go.mod is or would be<ul>
+<li>M-x lsp-workspace-folders-add \~/src/cool</li>
+</ul>
+</li>
+<li>set break point</li>
+<li>M-x dap-debug</li>
+<li>if you want to launch a binary or test to debug, use "Go
+    Dlv Launch File Configuration"</li>
+<li>if you want to debug current test function inside test
+    file use "Go Dlv Test Current Function Configuration"</li>
+<li>if you want to debug already running application select
+    "Go Dlv Attach Configuration"</li>
+<li>if you want to debug remote application you need start
+    delve on remote machine first, for example: <code>dlv --headless
+    --accept-multiclient attach 123 -l :1080</code> (see <a href="https://github.com/go-delve/delve/tree/master/Documentation/usage#using-delve">dlv usage
+    documentation</a>
+    for more command-line options) and select "Go Dlv Remote Debug"</li>
+<li>if your build environment differs from your development
+    environment or you use <code>-trimpath</code> build flag you can use
+    <code>substitutePath</code>. <code>M-x</code> <code>dap-debug-edit-template</code> then
+    select some template and add <code>substitutePath</code> option to
+    it:
+    <div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nv">dap-register-debug-template</span>
+ <span class="s">&quot;Launch Executable trimmed path&quot;</span>
+ <span class="p">(</span><span class="nf">list</span> <span class="nb">:type</span> <span class="s">&quot;go&quot;</span>
+       <span class="nb">:request</span> <span class="s">&quot;launch&quot;</span>
+       <span class="nb">:name</span> <span class="s">&quot;Launch Executable trimmed path&quot;</span>
+       <span class="nb">:mode</span> <span class="s">&quot;exec&quot;</span>
+       <span class="nb">:program</span> <span class="no">nil</span>
+       <span class="nb">:args</span> <span class="no">nil</span>
+       <span class="nb">:env</span> <span class="no">nil</span>
+       <span class="nb">:substitutePath</span> <span class="p">(</span><span class="nf">vector</span> <span class="p">(</span><span class="nv">ht</span> <span class="p">(</span><span class="s">&quot;from&quot;</span> <span class="s">&quot;/home/user/projects/tribonacci&quot;</span><span class="p">)</span> <span class="p">(</span><span class="s">&quot;to&quot;</span> <span class="s">&quot;github.com/s-kostyaev/tribonacci&quot;</span><span class="p">)))))</span>
+</code></pre></div>
+    and after evaluation you can select this edited template
+    and debug as usual.</li>
+</ul>
+</li>
+<li>
+<p>Trouble shooting</p>
+<ul>
+<li>put (setq dap-print-io t) and check messages buffer</li>
+<li>e.g linter can return note at debug session response
+    resulting debug session to fail</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="go-vs-code-debug-adapter">Go (VS Code debug adapter)<a class="headerlink" href="#go-vs-code-debug-adapter" title="Permanent link">#</a></h2>
+<ol>
+<li>
+<p>Installation</p>
+<ul>
+<li>
 <p>For easier of setting up vscode extension, you only need call
     <code>dap-go-setup</code> after requiring <code>dap-go</code>.</p>
 <ul>
@@ -1497,7 +1600,7 @@ Core Attach (Console)" from <code>dap-debug</code> menu.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 16, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 18, 2022</span>
       
     
   </small>

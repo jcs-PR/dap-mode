@@ -8,14 +8,14 @@
       
       
       
-        <link rel="canonical" href="https://emacs-lsp.github.io/dap-mode/page/features/">
+        <link rel="canonical" href="https://emacs-lsp.github.io/dap-mode/page/python-poetry-pyenv/">
       
       <link rel="icon" href="../../screenshots/logo.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.0.0">
     
     
       
-        <title>Features - DAP Mode</title>
+        <title>Python, debbuging with poetry + pyenv - DAP Mode</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#features" class="md-skip">
+        <a href="#debugging-python-when-using-poetry-and-pyenv" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Features
+              Python, debbuging with poetry + pyenv
             
           </span>
         </div>
@@ -190,12 +190,10 @@
         
   
   
-    
-  
 
 
   <li class="md-tabs__item">
-    <a href="./" class="md-tabs__link md-tabs__link--active">
+    <a href="../features/" class="md-tabs__link">
       Features
     </a>
   </li>
@@ -228,13 +226,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../clojure/" class="md-tabs__link">
+      <a href="../clojure/" class="md-tabs__link md-tabs__link--active">
         Tutorials
       </a>
     </li>
@@ -365,115 +365,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Features
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../features/" class="md-nav__link">
         Features
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#debugger-commands" class="md-nav__link">
-    Debugger commands
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#windows" class="md-nav__link">
-    Windows
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sessions" class="md-nav__link">
-    Sessions
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#locals" class="md-nav__link">
-    Locals
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#expressions" class="md-nav__link">
-    Expressions
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#breakpoints" class="md-nav__link">
-    Breakpoints
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#loaded-sources" class="md-nav__link">
-    Loaded sources
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dap-debug-repl" class="md-nav__link">
-    DAP debug REPL
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#launchjson-support" class="md-nav__link">
-    launch.json support
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#compiling-the-project-before-debugging" class="md-nav__link">
-    Compiling the project before debugging
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -514,12 +410,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       
       
@@ -554,11 +452,21 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../python-poetry-pyenv/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Python, debbuging with poetry + pyenv
       </a>
+      
     </li>
   
 
@@ -749,84 +657,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#debugger-commands" class="md-nav__link">
-    Debugger commands
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#windows" class="md-nav__link">
-    Windows
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sessions" class="md-nav__link">
-    Sessions
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#locals" class="md-nav__link">
-    Locals
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#expressions" class="md-nav__link">
-    Expressions
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#breakpoints" class="md-nav__link">
-    Breakpoints
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#loaded-sources" class="md-nav__link">
-    Loaded sources
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dap-debug-repl" class="md-nav__link">
-    DAP debug REPL
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#launchjson-support" class="md-nav__link">
-    launch.json support
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#compiling-the-project-before-debugging" class="md-nav__link">
-    Compiling the project before debugging
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -837,247 +667,35 @@
             <article class="md-content__inner md-typeset">
               
                 
-<a href="https://github.com/emacs-lsp/dap-mode/edit/master/docs/page/features.md" title="Edit this page" class="md-content__button md-icon">
+<a href="https://github.com/emacs-lsp/dap-mode/edit/master/docs/page/python-poetry-pyenv.md" title="Edit this page" class="md-content__button md-icon">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
 </a>
 
 
-<h1 id="features">Features<a class="headerlink" href="#features" title="Permanent link">#</a></h1>
-<ul>
-<li>Launch/Attach</li>
-<li>Breakpoints</li>
-<li>Exceptions</li>
-<li>Pause &amp; Continue</li>
-<li>Step In/Out/Over</li>
-<li>Callstacks</li>
-<li>Threads</li>
-<li>Multiple simultaneous debug sessions</li>
-<li>Evaluating statements</li>
-<li>Debug/Run configurations (also with launch.json files)</li>
-<li>Expressions</li>
-</ul>
-<h2 id="debugger-commands">Debugger commands<a class="headerlink" href="#debugger-commands" title="Permanent link">#</a></h2>
-<table>
-<thead>
-<tr>
-<th>Command</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>dap-breakpoint-toggle</code></td>
-<td>Toggle breakpoint at line</td>
-</tr>
-<tr>
-<td><code>dap-breakpoint-delete</code></td>
-<td>Delete breakpoint at line</td>
-</tr>
-<tr>
-<td><code>dap-breakpoint-add</code></td>
-<td>Add breakpoint at line</td>
-</tr>
-<tr>
-<td><code>dap-breakpoint-condition</code></td>
-<td>Set/unset breakpoint condition</td>
-</tr>
-<tr>
-<td><code>dap-breakpoint-hit-condition</code></td>
-<td>Set/unset breakpoint hit condition</td>
-</tr>
-<tr>
-<td><code>dap-breakpoint-log-message</code></td>
-<td>Set/unset breakpoint log message</td>
-</tr>
-<tr>
-<td><code>dap-eval</code></td>
-<td>Eval string</td>
-</tr>
-<tr>
-<td><code>dap-eval-region</code></td>
-<td>Eval region string</td>
-</tr>
-<tr>
-<td><code>dap-eval-thing-at-point</code></td>
-<td>Eval symbol at point</td>
-</tr>
-<tr>
-<td><code>dap-step-in</code></td>
-<td>Debug step in</td>
-</tr>
-<tr>
-<td><code>dap-next</code></td>
-<td>Debug next</td>
-</tr>
-<tr>
-<td><code>dap-step-out</code></td>
-<td>Debug step out</td>
-</tr>
-<tr>
-<td><code>dap-stop-thread</code></td>
-<td>Stop thread</td>
-</tr>
-<tr>
-<td><code>dap-restart-frame</code></td>
-<td>Restart frame</td>
-</tr>
-<tr>
-<td><code>dap-continue</code></td>
-<td>Debug continue</td>
-</tr>
-<tr>
-<td><code>dap-disconnect</code></td>
-<td>Cancel current debug session</td>
-</tr>
-<tr>
-<td><code>dap-switch-stack-frame</code></td>
-<td>Switch active stack frame</td>
-</tr>
-<tr>
-<td><code>dap-switch-thread</code></td>
-<td>Switch active thread</td>
-</tr>
-<tr>
-<td><code>dap-switch-session</code></td>
-<td>Switch active session</td>
-</tr>
-<tr>
-<td><code>dap-debug-edit-template</code></td>
-<td>Generate run command</td>
-</tr>
-<tr>
-<td><code>dap-debug</code></td>
-<td>Create and run new configuration using the available templates</td>
-</tr>
-<tr>
-<td><code>dap-debug-last</code></td>
-<td>Debug previous configuration</td>
-</tr>
-<tr>
-<td><code>dap-debug-recent</code></td>
-<td>Select configuration to run from the previously started command</td>
-</tr>
-<tr>
-<td><code>dap-go-to-output-buffer</code></td>
-<td>Go output buffer</td>
-</tr>
-</tbody>
-</table>
-<h2 id="windows">Windows<a class="headerlink" href="#windows" title="Permanent link">#</a></h2>
-<table>
-<thead>
-<tr>
-<th>Command</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>dap-ui-sessions</code></td>
-<td>Show active/terminated sessions view</td>
-</tr>
-<tr>
-<td><code>dap-ui-locals</code></td>
-<td>Show locals view</td>
-</tr>
-<tr>
-<td><code>dap-ui-expressions</code></td>
-<td>Show expressions view</td>
-</tr>
-<tr>
-<td><code>dap-ui-breakpoints</code></td>
-<td>Show breakpoints view</td>
-</tr>
-<tr>
-<td><code>dap-ui-repl</code></td>
-<td>DAP UI REPL</td>
-</tr>
-</tbody>
-</table>
-<h2 id="sessions">Sessions<a class="headerlink" href="#sessions" title="Permanent link">#</a></h2>
-<p>The session view is shown after invoking <code>dap-ui-sessions</code> . It
-represents the list of the active sessions.</p>
-<h2 id="locals">Locals<a class="headerlink" href="#locals" title="Permanent link">#</a></h2>
-<p>Locals can be viewed after invoking <code>dap-ui-locals</code>.</p>
-<h2 id="expressions">Expressions<a class="headerlink" href="#expressions" title="Permanent link">#</a></h2>
-<p>Watch expressions can be viewed after invoking <code>dap-ui-expressions</code>. You
-could add remove watch expressions via <code>dap-ui-expressions-add</code> and
-<code>dap-ui-expressions-remove</code>.</p>
-<h2 id="breakpoints">Breakpoints<a class="headerlink" href="#breakpoints" title="Permanent link">#</a></h2>
-<p>Breakpoints can be viewed after invoking <code>dap-ui-breakpoints</code>.</p>
-<ol>
-<li>
-<p>Keybindings</p>
-<table>
-<thead>
-<tr>
-<th>Command</th>
-<th>Description</th>
-<th>Keybindings</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>dap-ui-breakpoints-goto</code></td>
-<td>Go to breakpoint under cursor</td>
-<td>\&lt;return></td>
-</tr>
-<tr>
-<td><code>dap-ui-breakpoints-delete</code></td>
-<td>Delete breakpoint under cursor</td>
-<td>d</td>
-</tr>
-<tr>
-<td><code>dap-ui-breakpoints-delete-selected</code></td>
-<td>Delete selected breakpoints</td>
-<td>D</td>
-</tr>
-<tr>
-<td><code>bui-list-mark</code></td>
-<td>Mark breakpoint under point</td>
-<td>m</td>
-</tr>
-<tr>
-<td><code>bui-list-unmark</code></td>
-<td>Unmark breakpoint under point</td>
-<td>u</td>
-</tr>
-<tr>
-<td><code>bui-list-unmark-all</code></td>
-<td>Unmark breakpoint under point</td>
-<td>U</td>
-</tr>
-</tbody>
-</table>
-</li>
-</ol>
-<h2 id="loaded-sources">Loaded sources<a class="headerlink" href="#loaded-sources" title="Permanent link">#</a></h2>
-<p>Loaded sources can be viewed by invoking <code>dap-tm-loaded-sources</code>.</p>
-<h2 id="dap-debug-repl">DAP debug REPL<a class="headerlink" href="#dap-debug-repl" title="Permanent link">#</a></h2>
-<p>DAP provides a debug shell to execute commands when the program has hit
-breakpoints. The REPL has the same features as regular emacs shells
-(e.g. command history, <code>C-p/n</code> navigation through history, etc.) in
-addition to optional <code>company-mode</code> autocompletion.
-<img alt="" src="screenshots/dap-ui-repl.png" /></p>
-<h2 id="launchjson-support">launch.json support<a class="headerlink" href="#launchjson-support" title="Permanent link">#</a></h2>
-<p>DAP supports <code>launch.json</code> files out of the box, and there is nothing that needs
-to be enabled. All that needs to be done is to add a <code>launch.json</code> file at the
-project root and to run <code>dap-debug</code>. All configurations stored in the
-<code>launch.json</code> will automatically show up in the selection. <code>launch.json</code> files in
-DAP are just like in VSCode and even support variables. See:</p>
-<ul>
-<li><a href="https://code.visualstudio.com/docs/editor/debugging">launch.json</a></li>
-<li><a href="https://code.visualstudio.com/docs/editor/variables-reference">launch.json variables</a></li>
-</ul>
-<h2 id="compiling-the-project-before-debugging">Compiling the project before debugging<a class="headerlink" href="#compiling-the-project-before-debugging" title="Permanent link">#</a></h2>
-<p>Many modern IDEs, for example Eclipse and VSCode (<code>preLaunchTask</code>), provide
-functionality to compile the project before starting the debug session.</p>
-<p><code>dap-mode</code> also has such a feature: the <code>:dap-compilation</code> property of launch
-configurations ("dap-compilation" in <code>launch.json</code>) specifies a shell command
-that needs to execute successfully before the debug session is started.
-<code>:dap-compilation-dir</code> can be used to control where the compilation is started.</p>
-<p>In the future, we want to support VSCode's <code>preLaunchTask</code> instead, but
-currently there is no tasks.json-compatible task runner for Emacs.</p>
+<h1 id="debugging-python-when-using-poetry-and-pyenv">Debugging Python when using Poetry and Pyenv<a class="headerlink" href="#debugging-python-when-using-poetry-and-pyenv" title="Permanent link">#</a></h1>
+<p>This guide is based on <a href="https://www.reddit.com/r/emacs/comments/k5dsar/emacs_ide_for_python_setting_up_the_debugger_with/">this guide on reddit</a></p>
+<p>One seemingly sane stack for Python development is <a href="https://github.com/python-poetry/poetry">Poetry</a> + <a href="https://github.com/pyenv/pyenv">Pyenv</a>.
+To debug a project using poetry, start by running 
+<div class="highlight"><pre><span></span><code>poetry config virtualenvs.in-project <span class="nb">true</span>
+poetry add --group dev debugpy
+poetry install
+</code></pre></div>
+Then, in emacs-land, install <a href="https://github.com/10sr/with-venv-el/tree/4a59ef8251f10ea772d4f504beeab08edf1f223e">with-venv</a>
+and add the following snippet wherever you tend to add snippets:
+<div class="highlight"><pre><span></span><code>  <span class="p">(</span><span class="nb">use-package</span> <span class="nv">dap-mode</span>
+  <span class="nb">:after</span> <span class="nv">lsp-mode</span>
+  <span class="nb">:commands</span> <span class="nv">dap-debug</span>
+  <span class="nb">:hook</span> <span class="p">((</span><span class="nv">python-mode</span> <span class="o">.</span> <span class="nv">dap-ui-mode</span><span class="p">)</span> <span class="p">(</span><span class="nv">python-mode</span> <span class="o">.</span> <span class="nv">dap-mode</span><span class="p">))</span>
+  <span class="nb">:config</span>
+  <span class="p">(</span><span class="nb">require</span> <span class="ss">&#39;dap-python</span><span class="p">)</span>
+  <span class="p">(</span><span class="k">setq</span> <span class="nv">dap-python-debugger</span> <span class="ss">&#39;debugpy</span><span class="p">)</span>
+  <span class="p">(</span><span class="nb">defun</span> <span class="nv">dap-python--pyenv-executable-find</span> <span class="p">(</span><span class="nv">command</span><span class="p">)</span>
+    <span class="p">(</span><span class="nv">with-venv</span> <span class="p">(</span><span class="nv">executable-find</span> <span class="s">&quot;python&quot;</span><span class="p">)))</span>
+
+  <span class="p">(</span><span class="nv">add-hook</span> <span class="ss">&#39;dap-stopped-hook</span>
+            <span class="p">(</span><span class="nb">lambda</span> <span class="p">(</span><span class="nv">arg</span><span class="p">)</span> <span class="p">(</span><span class="nf">call-interactively</span> <span class="nf">#&#39;</span><span class="nv">dap-hydra</span><span class="p">))))</span>
+</code></pre></div></p>
+<p>You should now be able to debug your projects by calling <code>dap-hydra</code> as normal.</p>
 
   <hr>
 <div class="md-source-file">
@@ -1102,7 +720,7 @@ currently there is no tasks.json-compatible task runner for Emacs.</p>
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../.." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
+        <a href="../clojure/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Clojure" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1111,20 +729,20 @@ currently there is no tasks.json-compatible task runner for Emacs.</p>
               <span class="md-footer__direction">
                 Previous
               </span>
-              Home
+              Clojure
             </div>
           </div>
         </a>
       
       
         
-        <a href="../configuration/" class="md-footer__link md-footer__link--next" aria-label="Next: Configuration" rel="next">
+        <a href="../gallery/" class="md-footer__link md-footer__link--next" aria-label="Next: Gallery" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Configuration
+              Gallery
             </div>
           </div>
           <div class="md-footer__button md-icon">
